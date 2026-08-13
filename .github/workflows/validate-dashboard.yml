@@ -1,0 +1,30 @@
+name: Validate dashboard project
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  data-and-sql:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Regenerate synthetic data
+        run: python scripts/generate_data.py
+      - name: Build database and saved outputs
+        run: |
+          python scripts/build_database.py
+          python scripts/run_queries.py
+      - name: Confirm generated outputs are committed
+        run: git diff --exit-code
+      - name: Run regression tests
+        run: python -m unittest discover -s tests -v
+      - name: Validate Power BI theme JSON
+        run: python -m json.tool powerbi/theme.json > /dev/null
