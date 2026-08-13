@@ -1,0 +1,44 @@
+{
+  "name": "Student Success Operations",
+  "dataColors": [
+    "#147D92",
+    "#72B7B2",
+    "#F2A65A",
+    "#D65A4A",
+    "#5B5F97",
+    "#A4C76E",
+    "#7B8794",
+    "#C8D6DC"
+  ],
+  "background": "#F5F7F8",
+  "foreground": "#172B35",
+  "tableAccent": "#147D92",
+  "good": "#3A8D5D",
+  "neutral": "#F2A65A",
+  "bad": "#D65A4A",
+  "minimum": "#D65A4A",
+  "center": "#F2A65A",
+  "maximum": "#3A8D5D",
+  "textClasses": {
+    "callout": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 28,
+      "color": "#172B35"
+    },
+    "title": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 14,
+      "color": "#172B35"
+    },
+    "header": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 12,
+      "color": "#172B35"
+    },
+    "label": {
+      "fontFace": "Segoe UI",
+      "fontSize": 10,
+      "color": "#52636B"
+    }
+  }
+}

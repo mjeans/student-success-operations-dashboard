@@ -1,0 +1,8 @@
+quality_rule,failing_records,status
+Duplicate student identifiers,0,PASS
+Duplicate student-month records,0,PASS
+Engagement rows without a student,0,PASS
+Invalid engagement values,0,PASS
+Invalid assessment scores,0,PASS
+Support tickets without a school,0,PASS
+Schools missing implementation status,0,PASS

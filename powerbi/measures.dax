@@ -1,0 +1,106 @@
+// DAX measures for the Power BI implementation.
+
+Eligible Students =
+DISTINCTCOUNT ( dim_student[student_id] )
+
+Activated Students =
+CALCULATE (
+    DISTINCTCOUNT ( fact_engagement_monthly[student_id] ),
+    fact_engagement_monthly[active_flag] = 1,
+    fact_engagement_monthly[month_start] <= DATE ( 2025, 10, 31 )
+)
+
+Activation Rate =
+DIVIDE ( [Activated Students], [Eligible Students] )
+
+Student Months =
+COUNTROWS ( fact_engagement_monthly )
+
+Dosage Target Months =
+CALCULATE (
+    COUNTROWS ( fact_engagement_monthly ),
+    fact_engagement_monthly[minutes] >= 60
+)
+
+Dosage Target Rate =
+DIVIDE ( [Dosage Target Months], [Student Months] )
+
+Follow-up Students =
+CALCULATE (
+    DISTINCTCOUNT ( fact_assessment[student_id] ),
+    fact_assessment[assessment_window] = "Follow-up"
+)
+
+Follow-up Completion Rate =
+DIVIDE ( [Follow-up Students], [Eligible Students] )
+
+Average Baseline Score =
+CALCULATE (
+    AVERAGE ( fact_assessment[score] ),
+    fact_assessment[assessment_window] = "Baseline"
+)
+
+Average Follow-up Score =
+CALCULATE (
+    AVERAGE ( fact_assessment[score] ),
+    fact_assessment[assessment_window] = "Follow-up"
+)
+
+Average Score Change =
+AVERAGEX (
+    VALUES ( dim_student[student_id] ),
+    VAR BaselineScore =
+        CALCULATE (
+            MAX ( fact_assessment[score] ),
+            fact_assessment[assessment_window] = "Baseline"
+        )
+    VAR FollowupScore =
+        CALCULATE (
+            MAX ( fact_assessment[score] ),
+            fact_assessment[assessment_window] = "Follow-up"
+        )
+    RETURN
+        IF (
+            NOT ISBLANK ( BaselineScore )
+                && NOT ISBLANK ( FollowupScore ),
+            FollowupScore - BaselineScore
+        )
+)
+
+Support Tickets =
+COUNTROWS ( fact_support_ticket )
+
+Support SLA Tickets =
+CALCULATE (
+    COUNTROWS ( fact_support_ticket ),
+    fact_support_ticket[response_hours] <= 24
+)
+
+Support SLA Rate =
+DIVIDE ( [Support SLA Tickets], [Support Tickets] )
+
+Training Rate =
+DIVIDE (
+    SUM ( fact_implementation[staff_trained] ),
+    SUM ( fact_implementation[staff_expected] )
+)
+
+Average Fidelity Score =
+AVERAGE ( fact_implementation[fidelity_score] )
+
+Risk Score =
+    IF ( [Activation Rate] < 0.75, 1, 0 )
+        + IF ( [Dosage Target Rate] < 0.60, 1, 0 )
+        + IF ( [Follow-up Completion Rate] < 0.80, 1, 0 )
+        + IF ( [Support SLA Rate] < 0.80, 1, 0 )
+        + IF ( [Average Fidelity Score] < 70, 1, 0 )
+        + IF ( MAX ( fact_implementation[data_refresh_days] ) > 14, 1, 0 )
+
+Risk Band =
+SWITCH (
+    TRUE (),
+    [Risk Score] >= 4, "Critical",
+    [Risk Score] = 3, "High",
+    [Risk Score] = 2, "Watch",
+    "Stable"
+)

@@ -1,0 +1,9 @@
+district_id,district_name,region,locale,implementation_tier,students,activation_rate,dosage_target_rate,followup_completion_rate,avg_score_change,support_sla_rate,training_rate,fidelity_score,avg_data_refresh_days,risk_score
+D006,Summit Plains,West,Rural,Intensive support,400,0.81,0.5358,0.83,8.09,0.4255,0.559,70.2,14.3,3
+D004,Pine Ridge,West,Town,Standard,400,0.87,0.5911,0.8625,8.9,0.6165,0.719,73.4,11.3,2
+D008,Willow Creek,East,Town,Standard,400,0.915,0.6606,0.9,9.16,0.6134,0.7822,77.1,11.5,1
+D007,Vista Grove,South,Urban,Standard,400,0.9275,0.6656,0.9,9.31,0.725,0.7658,76.7,8.8,1
+D003,Northstar,North,Rural,Intensive support,400,0.9475,0.6644,0.875,9.48,0.6384,0.6684,73.8,11.0,1
+D002,Harbor Point,East,Urban,Standard,400,0.9525,0.7456,0.93,10.8,0.8598,0.8788,83.1,6.0,0
+D005,Riverbend,South,Suburban,Early adopter,400,0.9675,0.7547,0.94,10.67,0.8215,0.8725,83.3,6.0,0
+D001,Cedar Valley,North,Suburban,Early adopter,400,0.975,0.7939,0.93,10.99,0.8519,0.9474,88.2,5.3,0

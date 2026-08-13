@@ -1,0 +1,14 @@
+segment_dimension,segment,students,followup_completion_rate,avg_baseline_score,avg_followup_score,avg_score_change
+District locale,Rural,800,0.8525,49.99,58.79,8.81
+District locale,Suburban,800,0.935,50.71,61.5,10.83
+District locale,Town,800,0.8812,50.66,59.68,9.03
+District locale,Urban,800,0.915,50.12,60.12,10.07
+Grade level,Grade 3,536,0.9086,46.69,56.35,9.6
+Grade level,Grade 4,545,0.8972,49.43,59.45,9.99
+Grade level,Grade 5,519,0.8921,49.96,59.77,9.86
+Grade level,Grade 6,530,0.9113,50.57,60.27,9.68
+Grade level,Grade 7,506,0.8538,52.54,61.44,9.14
+Grade level,Grade 8,564,0.9096,53.02,63.03,9.92
+Implementation tier,Early adopter,800,0.935,50.71,61.5,10.83
+Implementation tier,Intensive support,800,0.8525,49.99,58.79,8.81
+Implementation tier,Standard,1600,0.8981,50.39,59.9,9.56
