@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import csv
 import sqlite3
+from contextlib import closing
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -27,7 +28,9 @@ def load(database_path: Path = DEFAULT_DATABASE) -> Path:
     if database_path.exists():
         database_path.unlink()
 
-    with sqlite3.connect(database_path) as connection:
+    # sqlite3's own context manager commits/rolls back; it does not close.
+    # Deterministic closure also releases Windows file locks on errors.
+    with closing(sqlite3.connect(database_path)) as connection:
         connection.executescript((SQL / "00_schema.sql").read_text())
         for table, filename in TABLE_FILES.items():
             with (DATA / filename).open(newline="", encoding="utf-8") as handle:
