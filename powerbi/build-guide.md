@@ -1,10 +1,10 @@
 # Power BI build guide
 
 The repository includes Power BI-ready flat files, tested metric definitions,
-DAX, a theme, and report specifications. Microsoft recommends PBIP for
-source-controlled Power BI development; a user with Power BI Desktop can build
-the report and save it as a PBIP project so the report and semantic model are
-stored as text-based files.
+DAX, a theme, and report specifications. A user with Power BI Desktop can build
+and validate the interactive report. The generated SVG reports linked from the
+README are a separate static implementation; no tested native Power BI report
+is claimed here.
 
 ## Load the model
 
@@ -17,32 +17,35 @@ stored as text-based files.
 7. Add the measures in `measures.dax`.
 8. Import `theme.json` from **View → Themes → Browse for themes**.
 
-## Report pages
+## Proposed report pages
 
 ### 1. Executive overview
 
 - KPI cards: eligible students, activation rate, dosage target rate,
-  follow-up completion, average score change, support SLA, high-risk schools
+  follow-up completion, paired score change, support SLA, high-risk schools
 - Line chart: active rate and dosage rate by month
-- Ranked bar chart: activation rate by district
+- Ranked bar chart: support SLA by district, with the 80% target visible
 - Risk table: five highest-priority schools
 - Slicers: region, district, implementation tier
 
 ### 2. Implementation monitor
 
-- Matrix: school-by-school activation, dosage, follow-up, support, training,
-  fidelity, freshness, and risk band
-- Scatter plot: training rate versus activation rate, sized by students and
-  colored by risk band
-- Bar chart: support SLA by district
+- Matrix: school activation, dosage, follow-up, support, fidelity, freshness,
+  exported scored flags, risk score and risk band
+- Training rate and training-support flag displayed separately as context
+- Action detail table with observed values, thresholds and suggested owners
 - Slicers: district and risk band
 
 ### 3. Outcomes and participation
 
-- KPI cards: average baseline, follow-up, and score change
-- Clustered bar chart: baseline and follow-up by grade
-- Table: segment sample size, follow-up completion, and score change
-- Explicit noncausal interpretation note
+- KPI cards: cohort size, follow-up completion, missing follow-up, paired change
+- Bar chart: within-student paired score change by grade
+- Table: segment cohort size, follow-up completion, and paired score change
+- Explicit noncausal interpretation and overlapping-segment notes
+
+Do not substitute the difference of separate baseline/follow-up averages for
+paired change when their observed samples differ. Label cohort size separately
+from the paired-score denominator.
 
 ### 4. Implementation action queue (SQL/CSV extension)
 
@@ -90,11 +93,10 @@ Summit Plains School 4 should show exactly five scored drivers and low-training
 context. A training-only school should remain visible in the school table,
 not appear as a fabricated scored action.
 
-PBIP must be created or converted through Power BI Desktop; Microsoft does not
-support programmatic PBIX/PBIP conversion. This repository therefore avoids
-claiming that a hand-authored binary PBIX was validated. The existing workbook
-and preview images are unchanged; the new page is specified here, not claimed
-as tested in Power BI Desktop.
+The current SVG previews are generated from the saved CSV outputs and checked
+in CI. See [Visual design and reproduction](../docs/visual-design.md). The
+original workbook and PNG images are unchanged. This guide is an interactive
+report specification, not a claim of completed Power BI Desktop testing.
 
 Official references:
 https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-overview

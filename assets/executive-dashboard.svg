@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120" viewBox="0 0 1600 1120" role="img" aria-labelledby="title description">
+<title id="title">Student success · Executive overview</title><desc id="description">Where are students participating, and where should implementation support go first? Static preview generated from committed synthetic CSV outputs; not a Power BI Desktop screenshot. Risk flags are inherited from SQL. Numeric labels and exclamation marks supplement color.</desc>
+<style>text{font-family:"DejaVu Sans",Arial,sans-serif;fill:#172B35}.muted{fill:#52636B}.accent{fill:#147D92}.bad{fill:#D65A4A}.light{fill:white}.bold{font-weight:700}.num{font-variant-numeric:tabular-nums}.grid{stroke:#172B35;stroke-opacity:.10}.rule{stroke:#172B35;stroke-opacity:.18}</style>
+<rect x="0.0" y="0.0" width="1600.0" height="1120.0" rx="0" fill="#F5F7F8"/>
+<rect x="0.0" y="0.0" width="1600.0" height="8.0" rx="0" fill="#147D92"/>
+<text x="44.0" y="42.0" font-size="14" class="muted bold" text-anchor="start">MATTHEW JEANS  /  EDUCATION ANALYTICS</text>
+<text x="1556.0" y="42.0" font-size="14" class="muted" text-anchor="end">SYNTHETIC DATA  ·  STATIC PREVIEW</text>
+<text x="44.0" y="98.0" font-size="40" class="bold" text-anchor="start">Student success · Executive overview</text>
+<text x="44.0" y="133.0" font-size="18" class="muted" text-anchor="start">Where are students participating, and where should implementation support go first?</text>
+<text x="44.0" y="1093.0" font-size="14" class="muted" text-anchor="start">STUDENT SUCCESS OPERATIONS  /  Generated from saved SQL outputs</text>
+<text x="1556.0" y="1093.0" font-size="15" class="bold" text-anchor="end">01 / 03</text>
+<rect x="44.0" y="164.0" width="240.3" height="136.0" rx="10" fill="white"/>
+<rect x="64.0" y="183.0" width="30.0" height="3.0" rx="0" fill="#147D92"/>
+<text x="64.0" y="210.0" font-size="17" class="muted" text-anchor="start">Eligible students</text>
+<text x="64.0" y="259.0" font-size="43" class="num bold" text-anchor="start">3,200</text>
+<text x="64.0" y="283.0" font-size="14" class="muted" text-anchor="start">8 districts · 32 schools</text>
+<rect x="298.3" y="164.0" width="240.3" height="136.0" rx="10" fill="white"/>
+<rect x="318.3" y="183.0" width="30.0" height="3.0" rx="0" fill="#147D92"/>
+<text x="318.3" y="210.0" font-size="17" class="muted" text-anchor="start">60-day activation</text>
+<text x="318.3" y="259.0" font-size="43" class="num bold" text-anchor="start">92.1%</text>
+<text x="318.3" y="283.0" font-size="14" class="muted" text-anchor="start">Eligible-student denominator</text>
+<rect x="552.7" y="164.0" width="240.3" height="136.0" rx="10" fill="white"/>
+<rect x="572.7" y="183.0" width="30.0" height="3.0" rx="0" fill="#147D92"/>
+<text x="572.7" y="210.0" font-size="17" class="muted" text-anchor="start">Dosage target met</text>
+<text x="572.7" y="259.0" font-size="43" class="num bold" text-anchor="start">67.7%</text>
+<text x="572.7" y="283.0" font-size="14" class="muted" text-anchor="start">Student-month denominator</text>
+<rect x="807.0" y="164.0" width="240.3" height="136.0" rx="10" fill="white"/>
+<rect x="827.0" y="183.0" width="30.0" height="3.0" rx="0" fill="#147D92"/>
+<text x="827.0" y="210.0" font-size="17" class="muted" text-anchor="start">Follow-up complete</text>
+<text x="827.0" y="259.0" font-size="43" class="num bold" text-anchor="start">89.6%</text>
+<text x="827.0" y="283.0" font-size="14" class="muted" text-anchor="start">Eligible-student denominator</text>
+<rect x="1061.3" y="164.0" width="240.3" height="136.0" rx="10" fill="white"/>
+<rect x="1081.3" y="183.0" width="30.0" height="3.0" rx="0" fill="#147D92"/>
+<text x="1081.3" y="210.0" font-size="17" class="muted" text-anchor="start">Paired score change</text>
+<text x="1081.3" y="259.0" font-size="43" class="num bold" text-anchor="start">+9.71</text>
+<text x="1081.3" y="283.0" font-size="14" class="muted" text-anchor="start">Descriptive, not causal</text>
+<rect x="1315.7" y="164.0" width="240.3" height="136.0" rx="10" fill="white"/>
+<rect x="1335.7" y="183.0" width="30.0" height="3.0" rx="0" fill="#D65A4A"/>
+<text x="1335.7" y="210.0" font-size="17" class="muted" text-anchor="start">Support within 24h</text>
+<text x="1335.7" y="259.0" font-size="43" class="num bold bad" text-anchor="start">68.1%</text>
+<text x="1335.7" y="283.0" font-size="14" class="muted" text-anchor="start">Target ≥ 80% of tickets</text>
+<rect x="44.0" y="324.0" width="724.0" height="385.0" rx="12" fill="white"/>
+<text x="68.0" y="360.0" font-size="24" class="bold" text-anchor="start">Participation over time</text>
+<line x1="68.0" y1="384.0" x2="93.0" y2="384.0" stroke="#147D92"/>
+<text x="101.0" y="389.0" font-size="15" class="muted" text-anchor="start">Active students</text>
+<line x1="262.0" y1="384.0" x2="287.0" y2="384.0" stroke="#5B5F97" stroke-dasharray="6 5"/>
+<text x="295.0" y="389.0" font-size="15" class="muted" text-anchor="start">Dosage target met</text>
+<line x1="100.0" y1="655.0" x2="680.0" y2="655.0" class="grid"/>
+<text x="90.0" y="660.0" font-size="14" class="muted" text-anchor="end">0%</text>
+<line x1="100.0" y1="597.2" x2="680.0" y2="597.2" class="grid"/>
+<text x="90.0" y="602.2" font-size="14" class="muted" text-anchor="end">25%</text>
+<line x1="100.0" y1="539.5" x2="680.0" y2="539.5" class="grid"/>
+<text x="90.0" y="544.5" font-size="14" class="muted" text-anchor="end">50%</text>
+<line x1="100.0" y1="481.8" x2="680.0" y2="481.8" class="grid"/>
+<text x="90.0" y="486.8" font-size="14" class="muted" text-anchor="end">75%</text>
+<line x1="100.0" y1="424.0" x2="680.0" y2="424.0" class="grid"/>
+<text x="90.0" y="429.0" font-size="14" class="muted" text-anchor="end">100%</text>
+<text x="100.0" y="681.0" font-size="14" class="muted" text-anchor="middle">Sep</text>
+<text x="172.5" y="681.0" font-size="14" class="muted" text-anchor="middle">Oct</text>
+<text x="245.0" y="681.0" font-size="14" class="muted" text-anchor="middle">Nov</text>
+<text x="317.5" y="681.0" font-size="14" class="muted" text-anchor="middle">Dec</text>
+<text x="390.0" y="681.0" font-size="14" class="muted" text-anchor="middle">Jan</text>
+<text x="462.5" y="681.0" font-size="14" class="muted" text-anchor="middle">Feb</text>
+<text x="535.0" y="681.0" font-size="14" class="muted" text-anchor="middle">Mar</text>
+<text x="607.5" y="681.0" font-size="14" class="muted" text-anchor="middle">Apr</text>
+<text x="680.0" y="681.0" font-size="14" class="muted" text-anchor="middle">May</text>
+<polyline points="100.0,486.4 172.5,481.7 245.0,476.2 317.5,495.4 390.0,474.2 462.5,469.8 535.0,467.2 607.5,465.9 680.0,472.8" fill="none" stroke="#147D92" stroke-width="3"/>
+<g><title>2025-09-01 active_rate: 73.0%</title><circle cx="100.0" cy="486.4" r="4" fill="#147D92"/></g>
+<g><title>2025-10-01 active_rate: 75.0%</title><circle cx="172.5" cy="481.7" r="4" fill="#147D92"/></g>
+<g><title>2025-11-01 active_rate: 77.4%</title><circle cx="245.0" cy="476.2" r="4" fill="#147D92"/></g>
+<g><title>2025-12-01 active_rate: 69.1%</title><circle cx="317.5" cy="495.4" r="4" fill="#147D92"/></g>
+<g><title>2026-01-01 active_rate: 78.3%</title><circle cx="390.0" cy="474.2" r="4" fill="#147D92"/></g>
+<g><title>2026-02-01 active_rate: 80.2%</title><circle cx="462.5" cy="469.8" r="4" fill="#147D92"/></g>
+<g><title>2026-03-01 active_rate: 81.3%</title><circle cx="535.0" cy="467.2" r="4" fill="#147D92"/></g>
+<g><title>2026-04-01 active_rate: 81.8%</title><circle cx="607.5" cy="465.9" r="4" fill="#147D92"/></g>
+<g><title>2026-05-01 active_rate: 78.9%</title><circle cx="680.0" cy="472.8" r="4" fill="#147D92"/></g>
+<text x="691.0" y="464.8" font-size="15" class="bold" text-anchor="start">78.9%</text>
+<polyline points="100.0,523.7 172.5,513.4 245.0,506.4 317.5,518.3 390.0,498.4 462.5,485.9 535.0,482.2 607.5,478.8 680.0,481.7" fill="none" stroke="#5B5F97" stroke-width="3" stroke-dasharray="7 5"/>
+<g><title>2025-09-01 dosage_target_rate: 56.8%</title><rect x="96.0" y="519.7" width="8" height="8" fill="#5B5F97"/></g>
+<g><title>2025-10-01 dosage_target_rate: 61.3%</title><rect x="168.5" y="509.4" width="8" height="8" fill="#5B5F97"/></g>
+<g><title>2025-11-01 dosage_target_rate: 64.3%</title><rect x="241.0" y="502.4" width="8" height="8" fill="#5B5F97"/></g>
+<g><title>2025-12-01 dosage_target_rate: 59.2%</title><rect x="313.5" y="514.3" width="8" height="8" fill="#5B5F97"/></g>
+<g><title>2026-01-01 dosage_target_rate: 67.8%</title><rect x="386.0" y="494.4" width="8" height="8" fill="#5B5F97"/></g>
+<g><title>2026-02-01 dosage_target_rate: 73.2%</title><rect x="458.5" y="481.9" width="8" height="8" fill="#5B5F97"/></g>
+<g><title>2026-03-01 dosage_target_rate: 74.8%</title><rect x="531.0" y="478.2" width="8" height="8" fill="#5B5F97"/></g>
+<g><title>2026-04-01 dosage_target_rate: 76.3%</title><rect x="603.5" y="474.8" width="8" height="8" fill="#5B5F97"/></g>
+<g><title>2026-05-01 dosage_target_rate: 75.0%</title><rect x="676.0" y="477.7" width="8" height="8" fill="#5B5F97"/></g>
+<text x="691.0" y="501.7" font-size="15" class="bold" text-anchor="start">75.0%</text>
+<text x="744.0" y="358.0" font-size="13" class="muted" text-anchor="end">Sep 2025 – May 2026</text>
+<rect x="790.0" y="324.0" width="766.0" height="385.0" rx="12" fill="white"/>
+<text x="814.0" y="360.0" font-size="24" class="bold" text-anchor="start">Support responsiveness by district</text>
+<text x="814.0" y="387.0" font-size="15" class="muted" text-anchor="start">Ticket-weighted rates; sorted from lowest to highest</text>
+<line x1="978.0" y1="414.0" x2="978.0" y2="670.0" class="grid"/>
+<text x="978.0" y="692.0" font-size="13" class="muted" text-anchor="middle">0%</text>
+<line x1="1100.0" y1="414.0" x2="1100.0" y2="670.0" class="grid"/>
+<text x="1100.0" y="692.0" font-size="13" class="muted" text-anchor="middle">25%</text>
+<line x1="1222.0" y1="414.0" x2="1222.0" y2="670.0" class="grid"/>
+<text x="1222.0" y="692.0" font-size="13" class="muted" text-anchor="middle">50%</text>
+<line x1="1344.0" y1="414.0" x2="1344.0" y2="670.0" class="grid"/>
+<text x="1344.0" y="692.0" font-size="13" class="muted" text-anchor="middle">75%</text>
+<line x1="1466.0" y1="414.0" x2="1466.0" y2="670.0" class="grid"/>
+<text x="1466.0" y="692.0" font-size="13" class="muted" text-anchor="middle">100%</text>
+<line x1="1368.4" y1="412.0" x2="1368.4" y2="670.0" stroke="#172B35" stroke-dasharray="6 5"/>
+<text x="1368.4" y="400.0" font-size="14" class="bold" text-anchor="middle">Target 80.0%</text>
+<text x="964.0" y="444.0" font-size="17" class="" text-anchor="end">Summit Plains</text>
+<rect x="978.0" y="428.0" width="207.6" height="21.0" rx="3" fill="#147D92"/>
+<text x="1195.6" y="444.0" font-size="16" class="bold num" text-anchor="start">42.6%</text>
+<text x="964.0" y="473.5" font-size="17" class="" text-anchor="end">Willow Creek</text>
+<rect x="978.0" y="457.5" width="299.3" height="21.0" rx="3" fill="#147D92"/>
+<text x="1287.3" y="473.5" font-size="16" class="bold num" text-anchor="start">61.3%</text>
+<text x="964.0" y="503.0" font-size="17" class="" text-anchor="end">Pine Ridge</text>
+<rect x="978.0" y="487.0" width="300.9" height="21.0" rx="3" fill="#147D92"/>
+<text x="1288.9" y="503.0" font-size="16" class="bold num" text-anchor="start">61.7%</text>
+<text x="964.0" y="532.5" font-size="17" class="" text-anchor="end">Northstar</text>
+<rect x="978.0" y="516.5" width="311.5" height="21.0" rx="3" fill="#147D92"/>
+<text x="1299.5" y="532.5" font-size="16" class="bold num" text-anchor="start">63.8%</text>
+<text x="964.0" y="562.0" font-size="17" class="" text-anchor="end">Vista Grove</text>
+<rect x="978.0" y="546.0" width="353.8" height="21.0" rx="3" fill="#147D92"/>
+<text x="1341.8" y="562.0" font-size="16" class="bold num" text-anchor="start">72.5%</text>
+<text x="964.0" y="591.5" font-size="17" class="" text-anchor="end">Riverbend</text>
+<rect x="978.0" y="575.5" width="400.9" height="21.0" rx="3" fill="#147D92"/>
+<text x="1388.9" y="591.5" font-size="16" class="bold num" text-anchor="start">82.2%</text>
+<text x="964.0" y="621.0" font-size="17" class="" text-anchor="end">Cedar Valley</text>
+<rect x="978.0" y="605.0" width="415.7" height="21.0" rx="3" fill="#147D92"/>
+<text x="1403.7" y="621.0" font-size="16" class="bold num" text-anchor="start">85.2%</text>
+<text x="964.0" y="650.5" font-size="17" class="" text-anchor="end">Harbor Point</text>
+<rect x="978.0" y="634.5" width="419.6" height="21.0" rx="3" fill="#147D92"/>
+<text x="1407.6" y="650.5" font-size="16" class="bold num" text-anchor="start">86.0%</text>
+<rect x="44.0" y="731.0" width="950.0" height="304.0" rx="12" fill="white"/>
+<text x="68.0" y="767.0" font-size="24" class="bold" text-anchor="start">Highest-priority schools</text>
+<text x="68.0" y="794.0" font-size="15" class="muted" text-anchor="start">Ranking inherited from SQL; score = number of missed operating thresholds</text>
+<text x="68.0" y="823.0" font-size="14" class="muted bold" text-anchor="start">RANK</text>
+<text x="134.0" y="823.0" font-size="14" class="muted bold" text-anchor="start">SCHOOL</text>
+<text x="686.0" y="823.0" font-size="14" class="muted bold" text-anchor="start">SCORE / 6</text>
+<text x="833.0" y="823.0" font-size="14" class="muted bold" text-anchor="start">RISK BAND</text>
+<line x1="68.0" y1="870.0" x2="970.0" y2="870.0" class="grid"/>
+<text x="68.0" y="858.0" font-size="17" class="bold" text-anchor="start">1</text>
+<text x="134.0" y="858.0" font-size="18" class="" text-anchor="start">Summit Plains School 4</text>
+<text x="727.0" y="858.0" font-size="19" class="bold num" text-anchor="middle">5</text>
+<text x="833.0" y="858.0" font-size="17" class="bold bad" text-anchor="start">Critical</text>
+<line x1="68.0" y1="903.0" x2="970.0" y2="903.0" class="grid"/>
+<text x="68.0" y="891.0" font-size="17" class="bold" text-anchor="start">2</text>
+<text x="134.0" y="891.0" font-size="18" class="" text-anchor="start">Pine Ridge School 2</text>
+<text x="727.0" y="891.0" font-size="19" class="bold num" text-anchor="middle">4</text>
+<text x="833.0" y="891.0" font-size="17" class="bold bad" text-anchor="start">Critical</text>
+<line x1="68.0" y1="936.0" x2="970.0" y2="936.0" class="grid"/>
+<text x="68.0" y="924.0" font-size="17" class="bold" text-anchor="start">3</text>
+<text x="134.0" y="924.0" font-size="18" class="" text-anchor="start">Summit Plains School 3</text>
+<text x="727.0" y="924.0" font-size="19" class="bold num" text-anchor="middle">4</text>
+<text x="833.0" y="924.0" font-size="17" class="bold bad" text-anchor="start">Critical</text>
+<line x1="68.0" y1="969.0" x2="970.0" y2="969.0" class="grid"/>
+<text x="68.0" y="957.0" font-size="17" class="bold" text-anchor="start">4</text>
+<text x="134.0" y="957.0" font-size="18" class="" text-anchor="start">Summit Plains School 2</text>
+<text x="727.0" y="957.0" font-size="19" class="bold num" text-anchor="middle">3</text>
+<text x="833.0" y="957.0" font-size="17" class="bold" text-anchor="start">High</text>
+<line x1="68.0" y1="1002.0" x2="970.0" y2="1002.0" class="grid"/>
+<text x="68.0" y="990.0" font-size="17" class="bold" text-anchor="start">5</text>
+<text x="134.0" y="990.0" font-size="18" class="" text-anchor="start">Pine Ridge School 4</text>
+<text x="727.0" y="990.0" font-size="19" class="bold num" text-anchor="middle">3</text>
+<text x="833.0" y="990.0" font-size="17" class="bold" text-anchor="start">High</text>
+<rect x="1016.0" y="731.0" width="540.0" height="304.0" rx="12" fill="white"/>
+<text x="1040.0" y="767.0" font-size="24" class="bold" text-anchor="start">Focus the recovery effort</text>
+<text x="1040.0" y="828.0" font-size="53" class="bold accent" text-anchor="start">5</text>
+<text x="1100.0" y="815.0" font-size="22" class="bold" text-anchor="start">high-risk schools</text>
+<text x="1100.0" y="845.0" font-size="17" class="muted" text-anchor="start">3 Critical · 2 High</text>
+<text x="1040.0" y="886.0" font-size="17" class="muted" text-anchor="start">Summit Plains: 3; Pine Ridge: 2.</text>
+<text x="1040.0" y="949.0" font-size="17" class="muted" text-anchor="start">Use the driver-level queue to separate</text>
+<text x="1040.0" y="974.0" font-size="17" class="muted" text-anchor="start">service, implementation and data-feed</text>
+<text x="1040.0" y="999.0" font-size="17" class="muted" text-anchor="start">problems.</text>
+<text x="44.0" y="1063.0" font-size="13" class="muted" text-anchor="start">Sources: 02_dashboard_kpis.csv · 03_monthly_engagement.csv · 04_district_performance.csv · 06_implementation_risk.csv</text>
+</svg>

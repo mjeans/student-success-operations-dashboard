@@ -76,6 +76,7 @@ Rebuild the database after updating the repository so the new views exist:
 python scripts/generate_data.py
 python scripts/build_database.py
 python scripts/run_queries.py
+python scripts/render_previews.py
 python -m unittest discover -s tests -v
 ```
 
@@ -99,6 +100,7 @@ school-grain table for school/student summaries and count distinct school IDs
 for schools represented in the queue. The Power BI build guide specifies the
 separate grains and filtering path.
 
-The existing workbook and preview images remain the original dashboard
-snapshot. This extension supplies tested SQL, CSV outputs and a Power BI page
-specification; it does not claim an updated workbook or a tested PBIX file.
+The current implementation-monitor SVG displays scored drivers and suggested
+owners from these outputs. See [Visual design and reproduction](visual-design.md).
+The original PNG files and Excel workbook remain unchanged. The static SVG
+reports do not claim a completed or tested native Power BI report.

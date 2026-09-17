@@ -22,6 +22,8 @@ jobs:
         run: |
           python scripts/build_database.py
           python scripts/run_queries.py
+      - name: Verify source-driven SVG previews
+        run: python scripts/render_previews.py --check
       - name: Confirm generated outputs are committed
         run: |
           git diff --exit-code
