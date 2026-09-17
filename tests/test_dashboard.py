@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import csv
+import gc
 import sqlite3
 import tempfile
 import unittest
@@ -18,6 +19,21 @@ from build_database import load  # noqa: E402
 
 
 class DashboardPipelineTests(unittest.TestCase):
+    def test_loader_releases_database_without_garbage_collection(self) -> None:
+        enabled = gc.isenabled()
+        gc.disable()
+        try:
+            with tempfile.TemporaryDirectory() as directory:
+                path = Path(directory) / "lifecycle.db"
+                load(path)
+                # Windows cannot rename a database still held by a connection.
+                renamed = path.with_name("closed.db")
+                path.rename(renamed)
+                renamed.unlink()
+        finally:
+            if enabled:
+                gc.enable()
+
     @classmethod
     def setUpClass(cls) -> None:
         cls.temp_dir = tempfile.TemporaryDirectory()
