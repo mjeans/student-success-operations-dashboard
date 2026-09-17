@@ -1,6 +1,11 @@
-.PHONY: all data database outputs test clean
+.PHONY: all data database outputs previews check-previews test clean
 
-all: data database outputs test
+all:
+	$(MAKE) data
+	$(MAKE) database
+	$(MAKE) outputs
+	$(MAKE) previews
+	$(MAKE) test
 
 data:
 	python scripts/generate_data.py
@@ -10,6 +15,12 @@ database:
 
 outputs:
 	python scripts/run_queries.py
+
+previews:
+	python scripts/render_previews.py
+
+check-previews:
+	python scripts/render_previews.py --check
 
 test:
 	python -m unittest discover -s tests -v

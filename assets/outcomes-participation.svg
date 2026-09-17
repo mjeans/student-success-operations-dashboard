@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120" viewBox="0 0 1600 1120" role="img" aria-labelledby="title description">
+<title id="title">Student success · Outcomes &amp; participation</title><desc id="description">Keep descriptive score change alongside cohort size and follow-up completeness. Static preview generated from committed synthetic CSV outputs; not a Power BI Desktop screenshot. Risk flags are inherited from SQL. Numeric labels and exclamation marks supplement color.</desc>
+<style>text{font-family:"DejaVu Sans",Arial,sans-serif;fill:#172B35}.muted{fill:#52636B}.accent{fill:#147D92}.bad{fill:#D65A4A}.light{fill:white}.bold{font-weight:700}.num{font-variant-numeric:tabular-nums}.grid{stroke:#172B35;stroke-opacity:.10}.rule{stroke:#172B35;stroke-opacity:.18}</style>
+<rect x="0.0" y="0.0" width="1600.0" height="1120.0" rx="0" fill="#F5F7F8"/>
+<rect x="0.0" y="0.0" width="1600.0" height="8.0" rx="0" fill="#147D92"/>
+<text x="44.0" y="42.0" font-size="14" class="muted bold" text-anchor="start">MATTHEW JEANS  /  EDUCATION ANALYTICS</text>
+<text x="1556.0" y="42.0" font-size="14" class="muted" text-anchor="end">SYNTHETIC DATA  ·  STATIC PREVIEW</text>
+<text x="44.0" y="98.0" font-size="40" class="bold" text-anchor="start">Student success · Outcomes &amp; participation</text>
+<text x="44.0" y="133.0" font-size="18" class="muted" text-anchor="start">Keep descriptive score change alongside cohort size and follow-up completeness.</text>
+<text x="44.0" y="1093.0" font-size="14" class="muted" text-anchor="start">STUDENT SUCCESS OPERATIONS  /  Generated from saved SQL outputs</text>
+<text x="1556.0" y="1093.0" font-size="15" class="bold" text-anchor="end">03 / 03</text>
+<rect x="44.0" y="164.0" width="367.5" height="136.0" rx="10" fill="white"/>
+<rect x="64.0" y="183.0" width="30.0" height="3.0" rx="0" fill="#147D92"/>
+<text x="64.0" y="210.0" font-size="17" class="muted" text-anchor="start">Eligible students</text>
+<text x="64.0" y="259.0" font-size="43" class="num bold" text-anchor="start">3,200</text>
+<text x="64.0" y="283.0" font-size="14" class="muted" text-anchor="start">Total cohort, not paired sample</text>
+<rect x="425.5" y="164.0" width="367.5" height="136.0" rx="10" fill="white"/>
+<rect x="445.5" y="183.0" width="30.0" height="3.0" rx="0" fill="#147D92"/>
+<text x="445.5" y="210.0" font-size="17" class="muted" text-anchor="start">Follow-up complete</text>
+<text x="445.5" y="259.0" font-size="43" class="num bold" text-anchor="start">89.6%</text>
+<text x="445.5" y="283.0" font-size="14" class="muted" text-anchor="start">Share of eligible students</text>
+<rect x="807.0" y="164.0" width="367.5" height="136.0" rx="10" fill="white"/>
+<rect x="827.0" y="183.0" width="30.0" height="3.0" rx="0" fill="#D65A4A"/>
+<text x="827.0" y="210.0" font-size="17" class="muted" text-anchor="start">Missing follow-up</text>
+<text x="827.0" y="259.0" font-size="43" class="num bold bad" text-anchor="start">10.4%</text>
+<text x="827.0" y="283.0" font-size="14" class="muted" text-anchor="start">Completeness gap, not zero growth</text>
+<rect x="1188.5" y="164.0" width="367.5" height="136.0" rx="10" fill="white"/>
+<rect x="1208.5" y="183.0" width="30.0" height="3.0" rx="0" fill="#147D92"/>
+<text x="1208.5" y="210.0" font-size="17" class="muted" text-anchor="start">Paired score change</text>
+<text x="1208.5" y="259.0" font-size="43" class="num bold" text-anchor="start">+9.71</text>
+<text x="1208.5" y="283.0" font-size="14" class="muted" text-anchor="start">Not a causal program effect</text>
+<rect x="44.0" y="324.0" width="724.0" height="385.0" rx="12" fill="white"/>
+<text x="68.0" y="360.0" font-size="24" class="bold" text-anchor="start">Average paired score change by grade</text>
+<text x="68.0" y="387.0" font-size="15" class="muted" text-anchor="start">Score points · within-student change among observed pairs</text>
+<line x1="232.0" y1="414.0" x2="232.0" y2="670.0" class="grid"/>
+<text x="232.0" y="692.0" font-size="13" class="muted" text-anchor="middle">0</text>
+<line x1="380.7" y1="414.0" x2="380.7" y2="670.0" class="grid"/>
+<text x="380.7" y="692.0" font-size="13" class="muted" text-anchor="middle">5</text>
+<line x1="529.3" y1="414.0" x2="529.3" y2="670.0" class="grid"/>
+<text x="529.3" y="692.0" font-size="13" class="muted" text-anchor="middle">10</text>
+<line x1="678.0" y1="414.0" x2="678.0" y2="670.0" class="grid"/>
+<text x="678.0" y="692.0" font-size="13" class="muted" text-anchor="middle">15</text>
+<text x="218.0" y="444.0" font-size="17" class="" text-anchor="end">Grade 3</text>
+<rect x="232.0" y="428.0" width="285.4" height="21.0" rx="3" fill="#147D92"/>
+<text x="527.4" y="444.0" font-size="16" class="bold num" text-anchor="start">+9.60</text>
+<text x="218.0" y="483.3" font-size="17" class="" text-anchor="end">Grade 4</text>
+<rect x="232.0" y="467.3" width="297.0" height="21.0" rx="3" fill="#147D92"/>
+<text x="539.0" y="483.3" font-size="16" class="bold num" text-anchor="start">+9.99</text>
+<text x="218.0" y="522.7" font-size="17" class="" text-anchor="end">Grade 5</text>
+<rect x="232.0" y="506.7" width="293.2" height="21.0" rx="3" fill="#147D92"/>
+<text x="535.2" y="522.7" font-size="16" class="bold num" text-anchor="start">+9.86</text>
+<text x="218.0" y="562.0" font-size="17" class="" text-anchor="end">Grade 6</text>
+<rect x="232.0" y="546.0" width="287.8" height="21.0" rx="3" fill="#147D92"/>
+<text x="529.8" y="562.0" font-size="16" class="bold num" text-anchor="start">+9.68</text>
+<text x="218.0" y="601.3" font-size="17" class="" text-anchor="end">Grade 7</text>
+<rect x="232.0" y="585.3" width="271.8" height="21.0" rx="3" fill="#147D92"/>
+<text x="513.8" y="601.3" font-size="16" class="bold num" text-anchor="start">+9.14</text>
+<text x="218.0" y="640.7" font-size="17" class="" text-anchor="end">Grade 8</text>
+<rect x="232.0" y="624.7" width="295.0" height="21.0" rx="3" fill="#147D92"/>
+<text x="537.0" y="640.7" font-size="16" class="bold num" text-anchor="start">+9.92</text>
+<rect x="790.0" y="324.0" width="766.0" height="385.0" rx="12" fill="white"/>
+<text x="814.0" y="360.0" font-size="24" class="bold" text-anchor="start">Monthly participation</text>
+<line x1="814.0" y1="384.0" x2="839.0" y2="384.0" stroke="#147D92"/>
+<text x="847.0" y="389.0" font-size="15" class="muted" text-anchor="start">Active students</text>
+<line x1="1008.0" y1="384.0" x2="1033.0" y2="384.0" stroke="#5B5F97" stroke-dasharray="6 5"/>
+<text x="1041.0" y="389.0" font-size="15" class="muted" text-anchor="start">Dosage target met</text>
+<line x1="846.0" y1="655.0" x2="1468.0" y2="655.0" class="grid"/>
+<text x="836.0" y="660.0" font-size="14" class="muted" text-anchor="end">0%</text>
+<line x1="846.0" y1="597.2" x2="1468.0" y2="597.2" class="grid"/>
+<text x="836.0" y="602.2" font-size="14" class="muted" text-anchor="end">25%</text>
+<line x1="846.0" y1="539.5" x2="1468.0" y2="539.5" class="grid"/>
+<text x="836.0" y="544.5" font-size="14" class="muted" text-anchor="end">50%</text>
+<line x1="846.0" y1="481.8" x2="1468.0" y2="481.8" class="grid"/>
+<text x="836.0" y="486.8" font-size="14" class="muted" text-anchor="end">75%</text>
+<line x1="846.0" y1="424.0" x2="1468.0" y2="424.0" class="grid"/>
+<text x="836.0" y="429.0" font-size="14" class="muted" text-anchor="end">100%</text>
+<text x="846.0" y="681.0" font-size="14" class="muted" text-anchor="middle">Sep</text>
+<text x="923.8" y="681.0" font-size="14" class="muted" text-anchor="middle">Oct</text>
+<text x="1001.5" y="681.0" font-size="14" class="muted" text-anchor="middle">Nov</text>
+<text x="1079.2" y="681.0" font-size="14" class="muted" text-anchor="middle">Dec</text>
+<text x="1157.0" y="681.0" font-size="14" class="muted" text-anchor="middle">Jan</text>
+<text x="1234.8" y="681.0" font-size="14" class="muted" text-anchor="middle">Feb</text>
+<text x="1312.5" y="681.0" font-size="14" class="muted" text-anchor="middle">Mar</text>
+<text x="1390.2" y="681.0" font-size="14" class="muted" text-anchor="middle">Apr</text>
+<text x="1468.0" y="681.0" font-size="14" class="muted" text-anchor="middle">May</text>
+<polyline points="846.0,486.4 923.8,481.7 1001.5,476.2 1079.2,495.4 1157.0,474.2 1234.8,469.8 1312.5,467.2 1390.2,465.9 1468.0,472.8" fill="none" stroke="#147D92" stroke-width="3"/>
+<g><title>2025-09-01 active_rate: 73.0%</title><circle cx="846.0" cy="486.4" r="4" fill="#147D92"/></g>
+<g><title>2025-10-01 active_rate: 75.0%</title><circle cx="923.8" cy="481.7" r="4" fill="#147D92"/></g>
+<g><title>2025-11-01 active_rate: 77.4%</title><circle cx="1001.5" cy="476.2" r="4" fill="#147D92"/></g>
+<g><title>2025-12-01 active_rate: 69.1%</title><circle cx="1079.2" cy="495.4" r="4" fill="#147D92"/></g>
+<g><title>2026-01-01 active_rate: 78.3%</title><circle cx="1157.0" cy="474.2" r="4" fill="#147D92"/></g>
+<g><title>2026-02-01 active_rate: 80.2%</title><circle cx="1234.8" cy="469.8" r="4" fill="#147D92"/></g>
+<g><title>2026-03-01 active_rate: 81.3%</title><circle cx="1312.5" cy="467.2" r="4" fill="#147D92"/></g>
+<g><title>2026-04-01 active_rate: 81.8%</title><circle cx="1390.2" cy="465.9" r="4" fill="#147D92"/></g>
+<g><title>2026-05-01 active_rate: 78.9%</title><circle cx="1468.0" cy="472.8" r="4" fill="#147D92"/></g>
+<text x="1479.0" y="464.8" font-size="15" class="bold" text-anchor="start">78.9%</text>
+<polyline points="846.0,523.7 923.8,513.4 1001.5,506.4 1079.2,518.3 1157.0,498.4 1234.8,485.9 1312.5,482.2 1390.2,478.8 1468.0,481.7" fill="none" stroke="#5B5F97" stroke-width="3" stroke-dasharray="7 5"/>
+<g><title>2025-09-01 dosage_target_rate: 56.8%</title><rect x="842.0" y="519.7" width="8" height="8" fill="#5B5F97"/></g>
+<g><title>2025-10-01 dosage_target_rate: 61.3%</title><rect x="919.8" y="509.4" width="8" height="8" fill="#5B5F97"/></g>
+<g><title>2025-11-01 dosage_target_rate: 64.3%</title><rect x="997.5" y="502.4" width="8" height="8" fill="#5B5F97"/></g>
+<g><title>2025-12-01 dosage_target_rate: 59.2%</title><rect x="1075.2" y="514.3" width="8" height="8" fill="#5B5F97"/></g>
+<g><title>2026-01-01 dosage_target_rate: 67.8%</title><rect x="1153.0" y="494.4" width="8" height="8" fill="#5B5F97"/></g>
+<g><title>2026-02-01 dosage_target_rate: 73.2%</title><rect x="1230.8" y="481.9" width="8" height="8" fill="#5B5F97"/></g>
+<g><title>2026-03-01 dosage_target_rate: 74.8%</title><rect x="1308.5" y="478.2" width="8" height="8" fill="#5B5F97"/></g>
+<g><title>2026-04-01 dosage_target_rate: 76.3%</title><rect x="1386.2" y="474.8" width="8" height="8" fill="#5B5F97"/></g>
+<g><title>2026-05-01 dosage_target_rate: 75.0%</title><rect x="1464.0" y="477.7" width="8" height="8" fill="#5B5F97"/></g>
+<text x="1479.0" y="501.7" font-size="15" class="bold" text-anchor="start">75.0%</text>
+<rect x="44.0" y="731.0" width="950.0" height="304.0" rx="12" fill="white"/>
+<text x="68.0" y="767.0" font-size="24" class="bold" text-anchor="start">Completeness and change by segment</text>
+<text x="68.0" y="794.0" font-size="15" class="muted" text-anchor="start">Cohort n is not the paired-score denominator; dimensions overlap</text>
+<text x="68.0" y="821.0" font-size="14" class="muted bold" text-anchor="start">SEGMENT</text>
+<text x="454.0" y="821.0" font-size="14" class="muted bold" text-anchor="start">COHORT N</text>
+<text x="625.0" y="821.0" font-size="14" class="muted bold" text-anchor="start">FOLLOW-UP</text>
+<text x="826.0" y="821.0" font-size="14" class="muted bold" text-anchor="start">PAIRED CHANGE</text>
+<text x="68.0" y="850.0" font-size="16" class="" text-anchor="start">Rural</text>
+<text x="520.0" y="850.0" font-size="16" class="num" text-anchor="end">800</text>
+<text x="699.0" y="850.0" font-size="16" class="num" text-anchor="end">85.3%</text>
+<text x="950.0" y="850.0" font-size="16" class="bold num" text-anchor="end">+8.81</text>
+<text x="68.0" y="875.0" font-size="16" class="" text-anchor="start">Suburban</text>
+<text x="520.0" y="875.0" font-size="16" class="num" text-anchor="end">800</text>
+<text x="699.0" y="875.0" font-size="16" class="num" text-anchor="end">93.5%</text>
+<text x="950.0" y="875.0" font-size="16" class="bold num" text-anchor="end">+10.83</text>
+<text x="68.0" y="900.0" font-size="16" class="" text-anchor="start">Town</text>
+<text x="520.0" y="900.0" font-size="16" class="num" text-anchor="end">800</text>
+<text x="699.0" y="900.0" font-size="16" class="num" text-anchor="end">88.1%</text>
+<text x="950.0" y="900.0" font-size="16" class="bold num" text-anchor="end">+9.03</text>
+<text x="68.0" y="925.0" font-size="16" class="" text-anchor="start">Urban</text>
+<text x="520.0" y="925.0" font-size="16" class="num" text-anchor="end">800</text>
+<text x="699.0" y="925.0" font-size="16" class="num" text-anchor="end">91.5%</text>
+<text x="950.0" y="925.0" font-size="16" class="bold num" text-anchor="end">+10.07</text>
+<line x1="68.0" y1="932.0" x2="970.0" y2="932.0" class="rule"/>
+<text x="68.0" y="950.0" font-size="16" class="" text-anchor="start">Early adopter</text>
+<text x="520.0" y="950.0" font-size="16" class="num" text-anchor="end">800</text>
+<text x="699.0" y="950.0" font-size="16" class="num" text-anchor="end">93.5%</text>
+<text x="950.0" y="950.0" font-size="16" class="bold num" text-anchor="end">+10.83</text>
+<text x="68.0" y="975.0" font-size="16" class="" text-anchor="start">Intensive support</text>
+<text x="520.0" y="975.0" font-size="16" class="num" text-anchor="end">800</text>
+<text x="699.0" y="975.0" font-size="16" class="num" text-anchor="end">85.3%</text>
+<text x="950.0" y="975.0" font-size="16" class="bold num" text-anchor="end">+8.81</text>
+<text x="68.0" y="1000.0" font-size="16" class="" text-anchor="start">Standard</text>
+<text x="520.0" y="1000.0" font-size="16" class="num" text-anchor="end">1,600</text>
+<text x="699.0" y="1000.0" font-size="16" class="num" text-anchor="end">89.8%</text>
+<text x="950.0" y="1000.0" font-size="16" class="bold num" text-anchor="end">+9.56</text>
+<rect x="1016.0" y="731.0" width="540.0" height="304.0" rx="12" fill="white"/>
+<text x="1040.0" y="767.0" font-size="24" class="bold" text-anchor="start">What the evidence does not say</text>
+<text x="1040.0" y="807.0" font-size="18" class="muted" text-anchor="start">Observed change is not program impact. There</text>
+<text x="1040.0" y="835.0" font-size="18" class="muted" text-anchor="start">is no untreated comparison group in this case</text>
+<text x="1040.0" y="863.0" font-size="18" class="muted" text-anchor="start">study.</text>
+<text x="1040.0" y="914.0" font-size="18" class="muted" text-anchor="start">Do not subtract the separate baseline and</text>
+<text x="1040.0" y="942.0" font-size="18" class="muted" text-anchor="start">follow-up averages: their observed samples</text>
+<text x="1040.0" y="970.0" font-size="18" class="muted" text-anchor="start">can differ. Use paired change.</text>
+<text x="44.0" y="1063.0" font-size="13" class="muted" text-anchor="start">Sources: 02_dashboard_kpis.csv · 03_monthly_engagement.csv · 05_segment_outcomes.csv</text>
+</svg>

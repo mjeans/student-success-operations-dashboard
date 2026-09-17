@@ -16,7 +16,23 @@ QUERY_FILES = [
     "05_segment_outcomes.sql",
     "06_implementation_risk.sql",
     "07_data_quality.sql",
+    "08_intervention_action_queue.sql",
 ]
+
+
+def export_query(connection: sqlite3.Connection, query: str, output: Path) -> int:
+    """Preserve headers even when a SELECT returns no action rows."""
+    cursor = connection.execute(query)
+    if cursor.description is None:
+        raise ValueError("Expected a query that returns named columns.")
+    headers = [column[0] for column in cursor.description]
+    rows = cursor.fetchall()
+    output.parent.mkdir(parents=True, exist_ok=True)
+    with output.open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.writer(handle)
+        writer.writerow(headers)
+        writer.writerows(rows)
+    return len(rows)
 
 
 def run(database_path: Path = DEFAULT_DATABASE) -> None:
@@ -27,14 +43,11 @@ def run(database_path: Path = DEFAULT_DATABASE) -> None:
     with sqlite3.connect(database_path) as connection:
         connection.row_factory = sqlite3.Row
         for filename in QUERY_FILES:
-            rows = connection.execute((SQL / filename).read_text()).fetchall()
             output = OUTPUTS / filename.replace(".sql", ".csv")
-            with output.open("w", newline="", encoding="utf-8") as handle:
-                if rows:
-                    writer = csv.DictWriter(handle, fieldnames=rows[0].keys())
-                    writer.writeheader()
-                    writer.writerows(dict(row) for row in rows)
-            print(f"{filename}: {len(rows)} rows -> {output.relative_to(ROOT)}")
+            count = export_query(
+                connection, (SQL / filename).read_text(encoding="utf-8"), output
+            )
+            print(f"{filename}: {count} rows -> {output.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":

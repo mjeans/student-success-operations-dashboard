@@ -1,20 +1,6 @@
-WITH scored AS (
-    SELECT
-        som.*,
-        (
-            CASE WHEN activation_rate < 0.75 THEN 1 ELSE 0 END
-            + CASE WHEN dosage_rate < 0.60 THEN 1 ELSE 0 END
-            + CASE WHEN followup_rate < 0.80 THEN 1 ELSE 0 END
-            + CASE WHEN support_sla_rate < 0.80 THEN 1 ELSE 0 END
-            + CASE WHEN fidelity_score < 70 THEN 1 ELSE 0 END
-            + CASE WHEN data_refresh_days > 14 THEN 1 ELSE 0 END
-        ) AS risk_score
-    FROM v_school_operating_metrics AS som
-)
+-- Preserve the original columns and ordering; append explicit driver flags.
 SELECT
-    RANK() OVER (
-        ORDER BY risk_score DESC, activation_rate ASC, school_id
-    ) AS intervention_priority,
+    intervention_priority,
     school_id,
     school_name,
     district_id,
@@ -27,11 +13,13 @@ SELECT
     ROUND(fidelity_score, 1) AS fidelity_score,
     data_refresh_days,
     risk_score,
-    CASE
-        WHEN risk_score >= 4 THEN 'Critical'
-        WHEN risk_score = 3 THEN 'High'
-        WHEN risk_score = 2 THEN 'Watch'
-        ELSE 'Stable'
-    END AS risk_band
-FROM scored
+    risk_band,
+    missed_activation_target,
+    missed_dosage_target,
+    missed_followup_target,
+    missed_support_sla_target,
+    missed_fidelity_target,
+    stale_data_flag,
+    training_support_needed
+FROM v_school_implementation_risk
 ORDER BY intervention_priority, school_id;
