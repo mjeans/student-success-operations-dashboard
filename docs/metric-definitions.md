@@ -26,3 +26,20 @@ should not be interpreted interchangeably.
 
 The risk score is an operational triage rule. It is not a predictive model and
 should be combined with local context before resources are reassigned.
+
+## Driver drill-down and contextual indicators
+
+The risk export appends `missed_activation_target`, `missed_dosage_target`,
+`missed_followup_target`, `missed_support_sla_target`, `missed_fidelity_target`
+and `stale_data_flag`. Their sum must equal `risk_score` for every school.
+Comparisons use unrounded values; equality meets the target.
+
+`training_support_needed` marks training below 80% but does not enter the score.
+The action queue contains one row per school and failed scored driver; training
+and stale-data context accompany those rows. Training-only cases can be found
+in the school-level table, without inventing another score component.
+
+See [Action queue rules and interpretation](action-queue.md) for routing, mixed
+units, suggested cadences, missing-data caveats and reporting at the correct
+grain. The original score, bands, rankings and existing metric columns are
+protected by a frozen-baseline regression test.

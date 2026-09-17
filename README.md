@@ -46,11 +46,29 @@ portfolio-wide redesign.
 
 ![Outcomes and participation preview](assets/outcomes-participation.png)
 
+## From risk ranking to action
+
+The [school risk table](outputs/06_implementation_risk.csv) now exposes six
+scored driver flags and a separate training-support flag. The
+[intervention action queue](outputs/08_intervention_action_queue.csv) turns each
+missed threshold into an inspectable row with the observed value, target,
+proposed action, suggested owner and review cadence. The reference data contain
+40 actions across 21 schools; the original 32-school scores and ranking are
+unchanged and protected by a frozen-baseline regression test.
+
+Summit Plains School 4 generates five actions: dosage, follow-up, support
+response, fidelity and freshness. Its low training rate is context, not a
+seventh score component. See [Action queue rules](docs/action-queue.md) for
+thresholds, routing, limitations and safe aggregation. The existing workbook
+and preview images are unchanged; this extension supplies tested SQL/CSV and
+a documented Power BI drillthrough page rather than a refreshed binary report.
+
 ## What this project demonstrates
 
 - A star-schema-inspired model with dimension and fact tables at explicit grain
 - SQL views, CTEs, conditional aggregation, window functions, and rankings
 - Reconciled KPI definitions and school-level operational risk rules
+- Explainable risk-driver drill-down and an action-oriented routing queue
 - Segment monitoring that preserves sample sizes and missing-outcome context
 - Power BI-ready DAX measures, theme, page specification, and source files
 - A polished Excel analyst companion for reviewers without Power BI Desktop
@@ -62,13 +80,13 @@ portfolio-wide redesign.
 
 ```text
 build/generated/       Locally generated, ignored Power BI-ready source tables
-sql/                   Schema, metric views, KPIs, trends, risk, and QA queries
+sql/                   Schema, metric views, KPIs, trends, risk, action queue and QA
 outputs/               Saved query results used for reconciliation
 powerbi/               DAX measures, theme, and Desktop build guide
 assets/                Dashboard preview images
-docs/                  Data model, metric dictionary, and decision memo
+docs/                  Data model, metric dictionary, action rules and decision memo
 scripts/               Deterministic data, SQLite, and query builders
-tests/                 Regression and reconciliation tests
+tests/                 Regression, frozen-baseline and reconciliation tests
 ```
 
 ## Reproduce the analysis
@@ -82,7 +100,8 @@ python scripts/run_queries.py
 python -m unittest discover -s tests -v
 ```
 
-Or run the complete workflow with `make all`.
+Or run the complete workflow with `make all`. Rebuild an existing database after
+updating the repository so the new risk-driver views are installed.
 
 The generated row-level fixtures and SQLite database are intentionally ignored.
 The generator, schema, aggregate outputs, dashboard workbook, and screenshots
@@ -92,11 +111,12 @@ differences.
 ## Power BI implementation
 
 The `powerbi/` folder includes the measures and theme, and
-`powerbi/build-guide.md` specifies the three report pages. Microsoft requires
-Power BI Desktop to create or convert PBIX/PBIP files, so this repository does
-not present a fabricated binary as a verified dashboard. The committed source
-tables, DAX, metric definitions, analyst workbook, and screenshots provide a
-fully auditable implementation package.
+`powerbi/build-guide.md` specifies the three original report pages plus an
+action-queue drillthrough page. Microsoft requires Power BI Desktop to create
+or convert PBIX/PBIP files, so this repository does not present a fabricated
+binary as a verified dashboard. The committed source tables, DAX, metric
+definitions, analyst workbook, and screenshots provide an auditable
+implementation package; the guide identifies which parts remain specifications.
 
 ## Interpretation boundary
 
@@ -108,6 +128,7 @@ also a transparent prioritization rule, not a validated predictive model.
 
 - [Data model](docs/data-model.md)
 - [Metric definitions](docs/metric-definitions.md)
+- [Action queue rules](docs/action-queue.md)
 - [Decision memo](docs/decision-memo.md)
 - [Power BI build guide](powerbi/build-guide.md)
 - [Analyst companion workbook](student-success-operations-dashboard.xlsx)

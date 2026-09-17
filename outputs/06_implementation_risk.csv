@@ -1,33 +1,33 @@
-intervention_priority,school_id,school_name,district_id,students,activation_rate,dosage_target_rate,followup_completion_rate,support_sla_rate,training_rate,fidelity_score,data_refresh_days,risk_score,risk_band
-1,S0064,Summit Plains School 4,D006,100,0.77,0.4967,0.78,0.3929,0.5,66.0,16,5,Critical
-2,S0042,Pine Ridge School 2,D004,100,0.79,0.5856,0.87,0.6316,0.6923,67.9,15,4,Critical
-3,S0063,Summit Plains School 3,D006,100,0.83,0.51,0.81,0.4242,0.52,66.9,15,4,Critical
-4,S0062,Summit Plains School 2,D006,100,0.82,0.5778,0.9,0.5517,0.625,77.8,15,3,High
-5,S0044,Pine Ridge School 4,D004,100,0.87,0.5578,0.86,0.5294,0.7097,69.7,10,3,High
-6,S0061,Summit Plains School 1,D006,100,0.82,0.5589,0.83,0.3333,0.5909,70.2,11,2,Watch
-7,S0083,Willow Creek School 3,D008,100,0.89,0.6744,0.91,0.6316,0.8,78.3,17,2,Watch
-8,S0043,Pine Ridge School 3,D004,100,0.92,0.5867,0.86,0.5909,0.7241,77.3,10,2,Watch
-9,S0034,Northstar School 4,D003,100,0.95,0.6522,0.87,0.4375,0.6,68.3,12,2,Watch
-10,S0082,Willow Creek School 2,D008,100,0.96,0.6456,0.87,0.6667,0.7222,73.3,15,2,Watch
-11,S0041,Pine Ridge School 1,D004,100,0.9,0.6344,0.86,0.7143,0.75,78.6,10,1,Stable
-12,S0084,Willow Creek School 4,D008,100,0.9,0.6833,0.92,0.6316,0.84,79.7,6,1,Stable
-13,S0072,Vista Grove School 2,D007,100,0.91,0.6522,0.93,0.7222,0.75,72.5,7,1,Stable
-14,S0081,Willow Creek School 1,D008,100,0.91,0.6389,0.9,0.5238,0.7667,77.0,8,1,Stable
-15,S0033,Northstar School 3,D003,100,0.93,0.71,0.91,0.6667,0.7143,70.8,9,1,Stable
-16,S0031,Northstar School 1,D003,100,0.95,0.6656,0.88,0.7826,0.7143,75.4,13,1,Stable
-17,S0054,Riverbend School 4,D005,100,0.95,0.7278,0.96,0.6667,0.875,86.6,8,1,Stable
-18,S0074,Vista Grove School 4,D007,100,0.95,0.6267,0.93,0.6,0.7586,75.7,10,1,Stable
-19,S0021,Harbor Point School 1,D002,100,0.96,0.7556,0.92,0.7619,0.871,86.8,12,1,Stable
-20,S0032,Northstar School 2,D003,100,0.96,0.63,0.84,0.6667,0.6452,80.7,10,1,Stable
-21,S0073,Vista Grove School 3,D007,100,0.98,0.7622,0.84,0.7778,0.8125,78.8,8,1,Stable
-22,S0071,Vista Grove School 1,D007,100,0.87,0.6211,0.9,0.8,0.7419,79.8,10,0,Stable
-23,S0023,Harbor Point School 3,D002,100,0.93,0.7144,0.95,0.85,0.8421,72.9,3,0,Stable
-24,S0011,Cedar Valley School 1,D001,100,0.95,0.7478,0.95,0.8421,0.9091,89.1,6,0,Stable
-25,S0024,Harbor Point School 4,D002,100,0.95,0.7322,0.93,0.9524,0.8929,84.1,3,0,Stable
-26,S0051,Riverbend School 1,D005,100,0.96,0.6967,0.96,0.8,0.8276,83.2,8,0,Stable
-27,S0022,Harbor Point School 2,D002,100,0.97,0.78,0.92,0.875,0.9091,88.6,6,0,Stable
-28,S0052,Riverbend School 2,D005,100,0.97,0.7822,0.94,0.9444,0.8947,78.7,3,0,Stable
-29,S0012,Cedar Valley School 2,D001,100,0.98,0.8167,0.92,0.85,1.0,87.8,2,0,Stable
-30,S0014,Cedar Valley School 4,D001,100,0.98,0.79,0.93,0.8333,0.9259,91.9,3,0,Stable
-31,S0013,Cedar Valley School 3,D001,100,0.99,0.8211,0.92,0.8824,0.9545,84.0,10,0,Stable
-32,S0053,Riverbend School 3,D005,100,0.99,0.8122,0.9,0.875,0.8929,84.8,5,0,Stable
+intervention_priority,school_id,school_name,district_id,students,activation_rate,dosage_target_rate,followup_completion_rate,support_sla_rate,training_rate,fidelity_score,data_refresh_days,risk_score,risk_band,missed_activation_target,missed_dosage_target,missed_followup_target,missed_support_sla_target,missed_fidelity_target,stale_data_flag,training_support_needed
+1,S0064,Summit Plains School 4,D006,100,0.77,0.4967,0.78,0.3929,0.5,66.0,16,5,Critical,0,1,1,1,1,1,1
+2,S0042,Pine Ridge School 2,D004,100,0.79,0.5856,0.87,0.6316,0.6923,67.9,15,4,Critical,0,1,0,1,1,1,1
+3,S0063,Summit Plains School 3,D006,100,0.83,0.51,0.81,0.4242,0.52,66.9,15,4,Critical,0,1,0,1,1,1,1
+4,S0062,Summit Plains School 2,D006,100,0.82,0.5778,0.9,0.5517,0.625,77.8,15,3,High,0,1,0,1,0,1,1
+5,S0044,Pine Ridge School 4,D004,100,0.87,0.5578,0.86,0.5294,0.7097,69.7,10,3,High,0,1,0,1,1,0,1
+6,S0061,Summit Plains School 1,D006,100,0.82,0.5589,0.83,0.3333,0.5909,70.2,11,2,Watch,0,1,0,1,0,0,1
+7,S0083,Willow Creek School 3,D008,100,0.89,0.6744,0.91,0.6316,0.8,78.3,17,2,Watch,0,0,0,1,0,1,0
+8,S0043,Pine Ridge School 3,D004,100,0.92,0.5867,0.86,0.5909,0.7241,77.3,10,2,Watch,0,1,0,1,0,0,1
+9,S0034,Northstar School 4,D003,100,0.95,0.6522,0.87,0.4375,0.6,68.3,12,2,Watch,0,0,0,1,1,0,1
+10,S0082,Willow Creek School 2,D008,100,0.96,0.6456,0.87,0.6667,0.7222,73.3,15,2,Watch,0,0,0,1,0,1,1
+11,S0041,Pine Ridge School 1,D004,100,0.9,0.6344,0.86,0.7143,0.75,78.6,10,1,Stable,0,0,0,1,0,0,1
+12,S0084,Willow Creek School 4,D008,100,0.9,0.6833,0.92,0.6316,0.84,79.7,6,1,Stable,0,0,0,1,0,0,0
+13,S0072,Vista Grove School 2,D007,100,0.91,0.6522,0.93,0.7222,0.75,72.5,7,1,Stable,0,0,0,1,0,0,1
+14,S0081,Willow Creek School 1,D008,100,0.91,0.6389,0.9,0.5238,0.7667,77.0,8,1,Stable,0,0,0,1,0,0,1
+15,S0033,Northstar School 3,D003,100,0.93,0.71,0.91,0.6667,0.7143,70.8,9,1,Stable,0,0,0,1,0,0,1
+16,S0031,Northstar School 1,D003,100,0.95,0.6656,0.88,0.7826,0.7143,75.4,13,1,Stable,0,0,0,1,0,0,1
+17,S0054,Riverbend School 4,D005,100,0.95,0.7278,0.96,0.6667,0.875,86.6,8,1,Stable,0,0,0,1,0,0,0
+18,S0074,Vista Grove School 4,D007,100,0.95,0.6267,0.93,0.6,0.7586,75.7,10,1,Stable,0,0,0,1,0,0,1
+19,S0021,Harbor Point School 1,D002,100,0.96,0.7556,0.92,0.7619,0.871,86.8,12,1,Stable,0,0,0,1,0,0,0
+20,S0032,Northstar School 2,D003,100,0.96,0.63,0.84,0.6667,0.6452,80.7,10,1,Stable,0,0,0,1,0,0,1
+21,S0073,Vista Grove School 3,D007,100,0.98,0.7622,0.84,0.7778,0.8125,78.8,8,1,Stable,0,0,0,1,0,0,0
+22,S0071,Vista Grove School 1,D007,100,0.87,0.6211,0.9,0.8,0.7419,79.8,10,0,Stable,0,0,0,0,0,0,1
+23,S0023,Harbor Point School 3,D002,100,0.93,0.7144,0.95,0.85,0.8421,72.9,3,0,Stable,0,0,0,0,0,0,0
+24,S0011,Cedar Valley School 1,D001,100,0.95,0.7478,0.95,0.8421,0.9091,89.1,6,0,Stable,0,0,0,0,0,0,0
+25,S0024,Harbor Point School 4,D002,100,0.95,0.7322,0.93,0.9524,0.8929,84.1,3,0,Stable,0,0,0,0,0,0,0
+26,S0051,Riverbend School 1,D005,100,0.96,0.6967,0.96,0.8,0.8276,83.2,8,0,Stable,0,0,0,0,0,0,0
+27,S0022,Harbor Point School 2,D002,100,0.97,0.78,0.92,0.875,0.9091,88.6,6,0,Stable,0,0,0,0,0,0,0
+28,S0052,Riverbend School 2,D005,100,0.97,0.7822,0.94,0.9444,0.8947,78.7,3,0,Stable,0,0,0,0,0,0,0
+29,S0012,Cedar Valley School 2,D001,100,0.98,0.8167,0.92,0.85,1.0,87.8,2,0,Stable,0,0,0,0,0,0,0
+30,S0014,Cedar Valley School 4,D001,100,0.98,0.79,0.93,0.8333,0.9259,91.9,3,0,Stable,0,0,0,0,0,0,0
+31,S0013,Cedar Valley School 3,D001,100,0.99,0.8211,0.92,0.8824,0.9545,84.0,10,0,Stable,0,0,0,0,0,0,0
+32,S0053,Riverbend School 3,D005,100,0.99,0.8122,0.9,0.875,0.8929,84.8,5,0,Stable,0,0,0,0,0,0,0

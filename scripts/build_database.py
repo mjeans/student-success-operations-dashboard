@@ -40,6 +40,7 @@ def load(database_path: Path = DEFAULT_DATABASE) -> Path:
                     reader,
                 )
         connection.executescript((SQL / "01_metric_views.sql").read_text())
+        connection.executescript((SQL / "01_risk_views.sql").read_text())
         connection.commit()
     return database_path
 
